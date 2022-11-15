@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Bloodworth",
-      "gender": "female",
-      "price": 3978,
-      "category": "saree",
-      "image": "http://cdn.shopify.com/s/files/1/0046/4506/0680/products/dark-green-silk-saree-nc15949_grande.jpg?v=1642824819"
-    },
-    {
       "id": 2,
       "title": "Tomik",
       "gender": "female",
