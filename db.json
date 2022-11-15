@@ -51,7 +51,7 @@
     {
       "id": 7,
       "title": "Myrie",
-      "gender": "male",
+      "gender": "female",
       "price": 2684,
       "category": "salwar",
       "image": "https://cdn.sareeka.com/image/cache/data2020/green-art-silk-salwar-kameez-156260-1000x1375.jpg"
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "title": "Doxey",
-      "gender": "male",
+      "gender": "female",
       "price": 4727,
       "category": "salwar",
       "image": "https://5.imimg.com/data5/BA/BB/MY-41359550/cotton-salwar-suit-500x500.jpg"

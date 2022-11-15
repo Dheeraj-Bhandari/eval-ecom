@@ -40,7 +40,7 @@ const request = {
 }
 
 const response = await api.post("/products", request)
-console.log(response)
+console.log(response.data)
 setdata([...data, response.data]);
 
   //  fetch('http://localhost:3000/products',{

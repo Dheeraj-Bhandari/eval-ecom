@@ -28,15 +28,14 @@ const ProductListing = () => {
 
 //   Sorting and filter
 
-function handlefilter(e){
+const  handlefilter= async (e)=>{
     setfilter(e)
 
-    const filterdata = data.filter((e)=>{
-        return e.gender===filter;
-
-    })
-    console.log(filterdata)
-    // setdata(filterdata)
+   return await api.get(`/products?gender=${filter}`)
+   .then((response)=>{
+    setdata(response.data)
+    console.log(filter, response.data)
+   })
 
 }
 
@@ -52,12 +51,13 @@ function handlesort(e){
     const getAlldata = async () => {
       const alldata = await retData();
       setdata(alldata);
+      
     };
     getAlldata();
-  }, [data]);
 
-console.log(sort)
-console.log(filter)
+  }, []);
+
+
 
   return (
     <div>
@@ -68,8 +68,8 @@ console.log(filter)
         value={filter}
         >
             <option value="filter">Filter</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="male">female</option>
+            <option value="female">male</option>
         </select>
         <select
         onChange={e=>handlesort(e.target.value)}
