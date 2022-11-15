@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import api from "../api/api";
+import listingCss from './listingCss.css'
 
 const ProductListing = () => {
   const [data, setdata] = useState([]);
@@ -36,18 +37,23 @@ const ProductListing = () => {
     <div>
       {data.map((e) => {
         return (
-          <div>
-            <div key={e.id}>
-              <p>{e.title}</p>
-              <img src={e.image} alt="" />
-              <p>Price {e.price}</p>
-              <p> Category {e.category}</p>
-              <p>Gender {e.gender}</p>
-              <button onClick={()=>delteProduct(e.id)} >Delete Product</button>
+         
+            <div id="Productcard" key={e.id}>
+              <p className="title">{e.title}</p>
+              <img  className="img" src={e.image} alt="" />
+              <p className="price">Price: {e.price}</p>
+              <p className="category"> Category: {e.category}</p>
+              <p className="gender">Gender :{e.gender}</p>
+              <button className="delbtn" onClick={()=>delteProduct(e.id)} >Delete Product</button>
             </div>
-          </div>
+          
         );
       })}
+      <div className="btnpage">
+
+      <button>Prev</button>
+      <button>Next</button>
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@
       "gender": "female",
       "price": 3978,
       "category": "saree",
-      "image": "https://picsum.photos/200"
+      "image": "http://cdn.shopify.com/s/files/1/0046/4506/0680/products/dark-green-silk-saree-nc15949_grande.jpg?v=1642824819"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "gender": "female",
       "price": 2198,
       "category": "jacket",
-      "image": "https://picsum.photos/200"
+      "image": "https://5.imimg.com/data5/NM/LX/MY-42532489/mens-black-jacket-500x500.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "gender": "male",
       "price": 933,
       "category": "jacket",
-      "image": "https://picsum.photos/200"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrNi9mWBjcU79i_BPOvpzSh8zC8hdBWrKkH8zFxmDbDRoLkMe_NuHUeNAzizmUFt-YtCs&usqp=CAU"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "gender": "female",
       "price": 4286,
       "category": "shirt",
-      "image": "https://picsum.photos/200"
+      "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "gender": "female",
       "price": 2853,
       "category": "shirt",
-      "image": "https://picsum.photos/200"
+      "image": "https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg"
     },
     {
       "id": 6,
@@ -46,15 +46,15 @@
       "gender": "female",
       "price": 4687,
       "category": "shirt",
-      "image": "https://picsum.photos/200"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Exjgy2Zjh5r7CjYsa2c-chmcH43n9RF-MQ&usqp=CAU"
     },
     {
       "id": 7,
       "title": "Myrie",
       "gender": "male",
       "price": 2684,
-      "category": "shirt",
-      "image": "https://picsum.photos/200"
+      "category": "salwar",
+      "image": "https://cdn.sareeka.com/image/cache/data2020/green-art-silk-salwar-kameez-156260-1000x1375.jpg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "gender": "male",
       "price": 4727,
       "category": "salwar",
-      "image": "https://picsum.photos/200"
+      "image": "https://5.imimg.com/data5/BA/BB/MY-41359550/cotton-salwar-suit-500x500.jpg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "gender": "male",
       "price": 1243,
       "category": "trouser",
-      "image": "https://picsum.photos/200"
+      "image": "https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_7794_400x.jpg?v=1658899794"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "gender": "male",
       "price": 1353,
       "category": "jacket",
-      "image": "https://picsum.photos/200"
+      "image": "https://contents.mediadecathlon.com/p733978/0ed498d7bb8757ef0e4134103fd75152/p733978.jpg"
     }
   ]
 }
