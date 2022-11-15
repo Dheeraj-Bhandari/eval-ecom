@@ -1,9 +1,16 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
+import api from '../api/api'
 
 const ProductForm = () => {
+  const [data, setdata] = useState([]);
 
+  const retData = async () => {
+    const response = await api.get("/products");
+    return response.data;
+  };
+
+ 
 
 
 const [title, settitle] = useState("");
@@ -19,30 +26,48 @@ const [image, setimage] = useState("")
 
 
 
-const  posttoJSON = (e)=>{
+const  posttoJSON =  async (e)=>{
 e.preventDefault();
 
 console.log(title, price, selects. category, image)
 
-
-   fetch('http://localhost:3000/products',{
-    method : "POST",
-    header:{"Content-Type": "application/json"},
-    body: JSON.stringify({
-             'title':title,
+const request = {
+        'title':title,
         'gender': 'male',
         'price': price,
         'category': category,
         'image': image
-    })
+}
 
-   }).then(()=>{
-    console.log("product added")
-   })
+const response = await api.post("/products", request)
+console.log(response)
+setdata([...data, response.data]);
+
+  //  fetch('http://localhost:3000/products',{
+  //   method : "POST",
+  //   header:{"Content-Type": "application/json"},
+  //   body: JSON.stringify({
+  //            'title':title,
+  //       'gender': 'male',
+  //       'price': price,
+  //       'category': category,
+  //       'image': image
+  //   })
+
+  //  }).then(()=>{
+  //   console.log("product added")
+  //  })
 
 
 }
 
+useEffect(() => {
+  const getAlldata = async () => {
+    const alldata = await retData();
+    setdata(alldata);
+  };
+  getAlldata();
+}, []);
 
 
   return (

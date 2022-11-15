@@ -79,23 +79,6 @@
       "price": 1353,
       "category": "jacket",
       "image": "https://picsum.photos/200"
-    },
-    {
-      "title": "Twills",
-      "gender": "female",
-      "price": "900",
-      "category": "t-shirts",
-      "image": "https://picsum.photos/200",
-      "id": 11
-    },
-    {
-      "title": "title",
-      "gender": "gender",
-      "price": "price",
-      "category": "category",
-      "image": "image",
-      "id": 14
     }
-    
   ]
 }
