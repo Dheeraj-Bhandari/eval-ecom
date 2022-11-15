@@ -5,9 +5,11 @@ import listingCss from './listingCss.css'
 
 const ProductListing = () => {
   const [data, setdata] = useState([]);
+  const [filter, setfilter] = useState("");
+  const [sort, setsort] = useState("")
 
   const retData = async () => {
-    const response = await api.get("/products");
+    const response = await api.get("/products?_page=1&_limit=5");
     return response.data;
   };
 
@@ -23,18 +25,61 @@ const ProductListing = () => {
     
   }
 
+
+//   Sorting and filter
+
+function handlefilter(e){
+    setfilter(e)
+
+    const filterdata = data.filter((e)=>{
+        return e.gender===filter;
+
+    })
+    console.log(filterdata)
+    // setdata(filterdata)
+
+}
+
+function handlesort(e){
+    setsort(e)
+}
+
+//   Sorting and filter end
+
+
+
   useEffect(() => {
     const getAlldata = async () => {
       const alldata = await retData();
       setdata(alldata);
     };
     getAlldata();
-  }, []);
+  }, [data]);
 
-
+console.log(sort)
+console.log(filter)
 
   return (
     <div>
+        <div className="btnpage">
+            
+        <select
+        onChange={e=>handlefilter(e.target.value)}
+        value={filter}
+        >
+            <option value="filter">Filter</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <select
+        onChange={e=>handlesort(e.target.value)}
+        value={sort}
+        >
+            <option value="sort">Sort</option>
+            <option value="low">Low To High</option>
+            <option value="high">High To Low</option>
+        </select>
+        </div>
       {data.map((e) => {
         return (
          
