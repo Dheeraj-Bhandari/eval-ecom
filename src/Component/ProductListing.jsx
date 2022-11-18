@@ -32,27 +32,7 @@ const ProductListing = () => {
     setdata(newdatalist);
   };
 
-  //   Sorting and filter
-
-  const handlefilter = async () => {
-    return await api
-      .get(`/products?gender=${filter}&_sort=price&_order=${sort}`)
-      .then((response) => {
-        setdata(response.data);
-        console.log(filter, response.data);
-      });
-  };
-
-  const handlesort = async (e) => {
-    setsort(e);
-    return await api
-      .get(`/products?_sort=price&_order=${sort}&gender=${filter}`)
-      .then((response) => {
-        setdata(response.data);
-        console.log(filter, response.data);
-      });
-  };
-
+ 
   //   Sorting and filter end
 
   useEffect(() => {
