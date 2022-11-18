@@ -64,6 +64,63 @@
       "category": "trouser",
       "image": "https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_7794_400x.jpg?v=1658899794"
     },
+
+
+    {
+      "id": 21,
+      "title": "Plazo",
+      "gender": "female",
+      "price": 1515,
+      "category": "casual",
+      "image": "https://img1.exportersindia.com/product_images/bc-full/2020/1/6596041/ladies-readymade-garments-1579858205-5268497.jpeg"
+    },
+
+    {
+      "id": 22,
+      "title": "Suit",
+      "gender": "female",
+      "price": 1243,
+      "category": "casual",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSBVmTHGnOr_MTZeRrYHoWIfZ2TIVIczYGw&usqp=CAU"
+    },
+
+    {
+      "id": 23,
+      "title": "Suits",
+      "gender": "female",
+      "price": 1243,
+      "category": "casual",
+      "image": "https://static.fibre2fashion.com/MemberResources/LeadResources/1/2018/7/Buyer/18151053/Images/18151053_0_ladies-dress.jpg?tr=w-320,h-320,cm-pad_resize,bg-F3F3F3"
+    },
+
+    {
+      "id": 24,
+      "title": "Ivons",
+      "gender": "male",
+      "price": 1243,
+      "category": "trouser",
+      "image": "https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_7794_400x.jpg?v=1658899794"
+    },
+
+    {
+      "id": 25,
+      "title": "Shirt",
+      "gender": "male",
+      "price": 2326,
+      "category": "casual",
+      "image": "https://assetscdn1.paytm.com/images/catalog/view_item/706682/1611049519292.jpg"
+    },
+
+    {
+      "id": 26,
+      "title": "Shirt",
+      "gender": "male",
+      "price": 6285,
+      "category": "shirt",
+      "image": "https://g3fashion.cdn.imgeng.in//upload/new_home/sub_images/1661316516_shirt.jpg"
+    },
+
+
     {
       "id": 10,
       "title": "Markel",

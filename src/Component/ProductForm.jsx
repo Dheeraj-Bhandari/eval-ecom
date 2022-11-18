@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import api from '../api/api'
-
+import './productform.css'
 const ProductForm = () => {
   const [data, setdata] = useState([]);
 
@@ -71,7 +71,7 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <div className="forms">
       <form onSubmit={(e)=>posttoJSON(e)}>
         <label htmlFor="title">Title</label>
         <input id="title" placeholder="Enter Title" type="text"

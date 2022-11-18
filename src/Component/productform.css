@@ -1,0 +1,13 @@
+input, label{
+    margin-right: 13px;
+}
+
+.forms{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 100%; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}

@@ -1,15 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import api from "../api/api";
-import listingCss from "./listingCss.css";
+import "./listingCss.css";
 
 const ProductListing = () => {
   const [data, setdata] = useState([]);
   const [filter, setfilter] = useState("");
   const [sort, setsort] = useState("");
-
+  const [page, setPage] = useState(1);
   const retData = async () => {
-    const response = await api.get("/products?_page=1&_limit=5");
+    const response = await api.get(`/products?_page=${page}&_limit=5`);
     return response.data;
   };
 
@@ -51,8 +51,10 @@ const ProductListing = () => {
       setdata(alldata);
     };
     getAlldata();
-  }, []);
+  }, [page]);
 
+  // console.log(data);
+  // console.log(page);
   return (
     <div>
       <div className="btnpage">
@@ -64,8 +66,8 @@ const ProductListing = () => {
           value={filter}
         >
           <option value="filter">Filter</option>
-          <option value="female">female</option>
-          <option value="male">male</option>
+          <option value="female">male</option>
+          <option value="male">female</option>
         </select>
 
         <select onChange={(e) => handlesort(e.target.value)} value={sort}>
@@ -74,7 +76,7 @@ const ProductListing = () => {
           <option value="asc">High To Low</option>
         </select>
       </div>
-      {data.map((e) => {
+      {data ? data.map((e) => {
         return (
           <div id="Productcard" key={e.id}>
             <p className="title">{e.title}</p>
@@ -82,15 +84,16 @@ const ProductListing = () => {
             <p className="price">Price: {e.price}</p>
             <p className="category"> Category: {e.category}</p>
             <p className="gender">Gender :{e.gender}</p>
-            <button className="delbtn" onClick={() => delteProduct(e.id)}>
+            <button className="delbtn" onClick={() => delteProduct(e.id) }>
               Delete Product
             </button>
           </div>
         );
-      })}
+      }) : <h1>Loading Data</h1>}
       <div className="btnpage">
-        <button>Prev</button>
-        <button>Next</button>
+        <button onClick={()=>setPage(page-1)}>Prev</button>
+        <p>Page {page}</p>
+        <button onClick={()=>setPage(page+1)}>Next</button>
       </div>
     </div>
   );
