@@ -4,7 +4,6 @@
       "id": 2,
       "title": "Tomik",
       "gender": "female",
-      "gender": "all",
       "price": 2198,
       "category": "jacket",
       "image": "https://5.imimg.com/data5/NM/LX/MY-42532489/mens-black-jacket-500x500.jpg"
@@ -13,7 +12,6 @@
       "id": 3,
       "title": "Pauley",
       "gender": "male",
-      "gender": "all",
       "price": 933,
       "category": "jacket",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrNi9mWBjcU79i_BPOvpzSh8zC8hdBWrKkH8zFxmDbDRoLkMe_NuHUeNAzizmUFt-YtCs&usqp=CAU"
@@ -22,7 +20,6 @@
       "id": 4,
       "title": "Edgerley",
       "gender": "female",
-      "gender": "all",
       "price": 4286,
       "category": "shirt",
       "image": "https://contents.mediadecathlon.com/p1004922/baf7d5069435b70652097309ac8e8bbf/p1004922.jpg?format=auto&quality=70&f=650x0"
@@ -31,7 +28,6 @@
       "id": 5,
       "title": "Featherstonhaugh",
       "gender": "female",
-      "gender": "all",
       "price": 2853,
       "category": "shirt",
       "image": "https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg"
@@ -40,7 +36,6 @@
       "id": 6,
       "title": "Busek",
       "gender": "female",
-      "gender": "all",
       "price": 4687,
       "category": "shirt",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Exjgy2Zjh5r7CjYsa2c-chmcH43n9RF-MQ&usqp=CAU"
@@ -49,7 +44,6 @@
       "id": 7,
       "title": "Myrie",
       "gender": "female",
-      "gender": "all",
       "price": 2684,
       "category": "salwar",
       "image": "https://cdn.sareeka.com/image/cache/data2020/green-art-silk-salwar-kameez-156260-1000x1375.jpg"
@@ -58,7 +52,6 @@
       "id": 8,
       "title": "Doxey",
       "gender": "female",
-      "gender": "all",
       "price": 4727,
       "category": "salwar",
       "image": "https://5.imimg.com/data5/BA/BB/MY-41359550/cotton-salwar-suit-500x500.jpg"
@@ -67,7 +60,6 @@
       "id": 9,
       "title": "Ivons",
       "gender": "male",
-      "gender": "all",
       "price": 1243,
       "category": "trouser",
       "image": "https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_7794_400x.jpg?v=1658899794"
@@ -78,7 +70,6 @@
       "id": 21,
       "title": "Plazo",
       "gender": "female",
-      "gender": "all",
       "price": 1515,
       "category": "casual",
       "image": "https://img1.exportersindia.com/product_images/bc-full/2020/1/6596041/ladies-readymade-garments-1579858205-5268497.jpeg"
@@ -88,7 +79,6 @@
       "id": 22,
       "title": "Suit",
       "gender": "female",
-      "gender": "all",
       "price": 1243,
       "category": "casual",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSBVmTHGnOr_MTZeRrYHoWIfZ2TIVIczYGw&usqp=CAU"
@@ -98,7 +88,6 @@
       "id": 23,
       "title": "Suits",
       "gender": "female",
-      "gender": "all",
       "price": 1243,
       "category": "casual",
       "image": "https://static.fibre2fashion.com/MemberResources/LeadResources/1/2018/7/Buyer/18151053/Images/18151053_0_ladies-dress.jpg?tr=w-320,h-320,cm-pad_resize,bg-F3F3F3"
@@ -108,7 +97,6 @@
       "id": 24,
       "title": "Ivons",
       "gender": "male",
-      "gender": "all",
       "price": 1243,
       "category": "trouser",
       "image": "https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_7794_400x.jpg?v=1658899794"
@@ -118,7 +106,6 @@
       "id": 25,
       "title": "Shirt",
       "gender": "male",
-      "gender": "all",
       "price": 2326,
       "category": "casual",
       "image": "https://assetscdn1.paytm.com/images/catalog/view_item/706682/1611049519292.jpg"
@@ -128,7 +115,6 @@
       "id": 26,
       "title": "Shirt",
       "gender": "male",
-      "gender": "all",
       "price": 6285,
       "category": "shirt",
       "image": "https://g3fashion.cdn.imgeng.in//upload/new_home/sub_images/1661316516_shirt.jpg"
@@ -138,7 +124,6 @@
     {
       "id": 10,
       "title": "Markel",
-      "gender": "all",
       "gender": "male",
       "price": 1353,
       "category": "jacket",
