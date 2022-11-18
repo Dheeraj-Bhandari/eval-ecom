@@ -1,15 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import api from "../api/api";
-import "./listingCss.css";
+import listingCss from "./listingCss.css";
 
 const ProductListing = () => {
   const [data, setdata] = useState([]);
-  const [filter, setfilter] = useState("");
+  const [filter, setfilter] = useState('all');
   const [sort, setsort] = useState("");
   const [page, setPage] = useState(1);
   const retData = async () => {
-    const response = await api.get(`/products?_page=${page}&_limit=5`);
+    const response = await api.get(`/products?_page=${page}&_limit=5&gender=${filter}&_sort=price&_order=${sort}`);
     return response.data;
   };
 
@@ -51,7 +51,8 @@ const ProductListing = () => {
       setdata(alldata);
     };
     getAlldata();
-  }, [page]);
+    console.log(data)
+  }, [page,sort,filter]);
 
   // console.log(data);
   // console.log(page);
@@ -61,19 +62,19 @@ const ProductListing = () => {
         <select
           onChange={(e) => {
             setfilter(e.target.value);
-            handlefilter();
+            // handlefilter();
           }}
           value={filter}
         >
-          <option value="filter">Filter</option>
-          <option value="female">male</option>
-          <option value="male">female</option>
+          <option value="all">Filter</option>
+          <option value="female">female</option>
+          <option value="male">male</option>
         </select>
 
-        <select onChange={(e) => handlesort(e.target.value)} value={sort}>
-          <option value="sort">Sort</option>
-          <option value="desc">Low To High</option>
-          <option value="asc">High To Low</option>
+        <select onChange={(e) => setsort(e.target.value)} value={sort}>
+          <option value="">Sort</option>
+          <option value="desc">High To low</option>
+          <option value="asc">low To High</option>
         </select>
       </div>
       {data ? data.map((e) => {
